@@ -1,5 +1,3 @@
-// import printMe from './print.js'
-// import './style.css';
 import { cube } from './math.js';
 
 function component() {
@@ -15,3 +13,7 @@ function component() {
 
 let element = component(); // 当 print.js 改变导致页面重新渲染时，重新获取渲染的元素
 document.body.appendChild(element);
+
+if (process.env.NODE_ENV != 'production') {
+  console.log('========= I am a dev console test, not show in production mode')
+}
