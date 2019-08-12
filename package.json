@@ -23,8 +23,10 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.15",
-    "uglifyjs-webpack-plugin": "^2.2.0"
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "whatwg-fetch": "^3.0.0"
   },
   "sideEffects": false
 }
